@@ -2,9 +2,7 @@ import discord
 from discord.ext import commands
 import asyncio
 from discord.utils import get
-
-
-bot = commands.Bot(command_prefix='f.') #инициализируем бота с префиксом 'f.'
+import os
 
 bad_words = 'сука', 'хуй', 'пздц', 'пиздец', 'хуёк'
 
@@ -29,5 +27,5 @@ async def on_message(message):
 
 
 
-token = "chatbot"
-bot.run(str(token))
+token = os.environ.get("chatbot")
+client.run(str(token))
