@@ -13,7 +13,7 @@ bot = commands.Bot(command_prefix = "*")
 @bot.event
 async def on_ready(*args):
     type = discord.ActivityType.game
-    activity = discord.Activity(name = "Удаляет маты 24на7.. Процесс...", type = type)
+    activity = discord.Activity(name = "Удаление матов 24на7.. Процесс...", type = type)
     status = discord.Status.online
     await bot.change_presence(activity = activity, status = status)
     print('Онлайн')
