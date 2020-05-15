@@ -4,7 +4,10 @@ import asyncio
 from discord.utils import get
 import os
 
-bad_words = 'сука', 'хуй', 'пздц', 'пиздец', 'хуёк'
+bad_words = 'сука', 'хуй', 'пздц', 'пиздец', 'хуёк', 'бля', 'блядь', 'блять', 'блядина', 'шалава', 'шлюха'
+
+
+bot = commands.Bot(command_prefix = "*")
 
 
 
