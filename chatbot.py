@@ -19,15 +19,15 @@ async def on_message(message):
 	
 	if msg in bad_words:
 		await message.delete()
-		await message.author.send(embed = discord.Embed(description = f'{message.author}, не матерись!!!',color=0x0c0c0c)) 
+		await message.author.send(embed = discord.Embed(description = f'{message.author}, Не матерись на сервере!',color=0x0c0c0c)) 
 
-        return
-
-
+        
 
 
 
 
 
-token = os.environ.get("chatbot")
+
+
+token = "chatbot"
 bot.run(str(token))
