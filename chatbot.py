@@ -2,7 +2,7 @@ import discord
 from discord.ext import commands
 import asyncio
 from discord.utils import get
-import os
+
 
 bot = commands.Bot(command_prefix='f.') #инициализируем бота с префиксом 'f.'
 
