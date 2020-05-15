@@ -31,4 +31,4 @@ async def on_message(message):
 
 
 token = os.environ.get("chatbot")
-client.run(str(token))
+bot.run(str(token))
