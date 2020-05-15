@@ -10,6 +10,15 @@ bad_words = 'сука', 'хуй', 'пздц', 'пиздец', 'хуёк', 'бл�
 bot = commands.Bot(command_prefix = "*")
 
 
+@bot.event
+async def on_ready(*args):
+    type = discord.ActivityType.watching
+    activity = discord.Activity(name = "Удаляет маты 24на7.. Процесс...", type = type)
+    status = discord.Status.online
+    await bot.change_presence(activity = activity, status = status)
+    print('Онлайн')
+
+
 
 
 @bot.event
